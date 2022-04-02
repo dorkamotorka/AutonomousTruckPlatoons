@@ -1,0 +1,8 @@
+--with "../message_handle/message_handle.gpr";
+with "../protectsobj/protectsobj.gpr";
+
+project Controller_Peer is
+    for Source_Dirs use ("src");
+    for Object_Dir use "obj";
+    for Main use ("controller_peer.adb");
+end Controller_Peer;

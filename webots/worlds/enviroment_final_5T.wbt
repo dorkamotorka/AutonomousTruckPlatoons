@@ -1,0 +1,4247 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  basicTimeStep 16
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.2894639871498396 0.9206537198619646 0.26193000639034225 1.5535149075699803
+  position -33.655493334614036 6.3278551483265915 9.442249475698691
+  follow "truck1"
+}
+TexturedBackground {
+  luminosity 0.01
+}
+TexturedBackgroundLight {
+}
+DEF Floor2 Floor {
+  translation -66 0 5
+  name "floor(5)"
+  size 55 55
+  appearance Parquetry {
+    type "light strip"
+    colorOverride 0.9 0.7 0.4
+  }
+}
+Solid {
+  translation -52 0.109608 3
+  scale 2 2 2
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+  }
+}
+DEF Tree Solid {
+  children [
+    Tree {
+      translation -72 0 -6
+      name "tree(26)"
+      scale 0.3 1 0.3
+    }
+    Tree {
+      translation -72 0 -2
+      name "tree(25)"
+      scale 0.3 1 0.3
+    }
+    Tree {
+      translation -72 0 -10.4
+      name "tree(24)"
+      scale 0.3 1 0.3
+    }
+    Tree {
+      translation -82 0 12.5
+      name "tree(23)"
+      scale 0.3 1 0.3
+    }
+    Tree {
+      translation -82 0 10
+      name "tree(22)"
+      scale 0.3 1 0.3
+    }
+    Tree {
+      translation -82 0 7
+      name "tree(21)"
+      scale 0.3 1 0.3
+    }
+    Tree {
+      translation -82 0 4
+      name "tree(20)"
+      scale 0.3 1 0.3
+    }
+    Tree {
+      translation -82 0 15
+      name "tree(19)"
+      scale 0.3 1 0.3
+    }
+    Tree {
+      translation -69.2 0 21
+      name "tree(18)"
+      scale 0.3 1 0.3
+    }
+    Tree {
+      translation -68 0 23
+      name "tree(17)"
+      scale 0.3 1 0.3
+    }
+    Tree {
+      translation -65 0 23
+      name "tree(16)"
+      scale 0.3 1 0.3
+    }
+    Tree {
+      translation -62 0 23
+      name "tree(15)"
+      scale 0.3 1 0.3
+    }
+    Tree {
+      translation -59 0 23
+      name "tree(14)"
+      scale 0.3 1 0.3
+    }
+    Tree {
+      translation -56 0 23
+      name "tree(13)"
+      scale 0.3 1 0.3
+    }
+    StopSign {
+      translation -60.2 0 28.9
+      rotation 0 1 0 1.5707996938995747
+      name "stop sign(4)"
+      height 1
+      signBoards [
+        StopPanel {
+          translation 0 -1 0
+        }
+      ]
+    }
+    StopSign {
+      translation -75.4 0 20.6
+      rotation 0 1 0 1.5707996938995747
+      name "stop sign(3)"
+      height 1
+      signBoards [
+        StopPanel {
+          translation 0 -1 0
+        }
+      ]
+    }
+    StopSign {
+      translation -87.7 0 8.3
+      name "stop sign(2)"
+      height 1
+      signBoards [
+        StopPanel {
+          translation 0 -1 0
+        }
+      ]
+    }
+    StopSign {
+      translation -63.5 0 -16.8
+      rotation 0 1 0 -1.5707903061004251
+      name "stop sign(1)"
+      height 1
+      signBoards [
+        StopPanel {
+          translation 0 -1 0
+        }
+      ]
+    }
+    StopSign {
+      translation -44 0 6
+      rotation 0 1 0 -3.141592653589793
+      height 1
+      signBoards [
+        StopPanel {
+          translation 0 -1 0
+        }
+      ]
+    }
+    HighwayPole {
+      translation -56 0 0
+      name "highway pole(3)"
+      stand 2
+      height 1.5
+      length 3
+      thickness 0.1
+      curveRadius 0.3
+      rightHorizontalSigns [
+        HighwaySign {
+          translation 0 0 -0.5
+          name "vertical sign"
+          height 0.5
+          length 1
+        }
+      ]
+      rightVerticalSigns [
+        HighwaySign {
+          translation 0 -1.1 1
+          name "horizontal sign"
+          height 0.8
+          length 1
+          texture [
+            "textures/highway_sign_la_ciotat.jpg"
+          ]
+        }
+      ]
+    }
+    HighwayPole {
+      translation -67.6 0 -6
+      rotation 0 1 0 1.5708003061004252
+      name "highway pole(2)"
+      stand 2
+      height 1.5
+      length 3
+      thickness 0.1
+      curveRadius 0.3
+      rightHorizontalSigns [
+        HighwaySign {
+          translation 0 0 -0.5
+          name "vertical sign"
+          height 0.5
+          length 1
+        }
+      ]
+      rightVerticalSigns [
+        HighwaySign {
+          translation 0 -1.1 1
+          name "horizontal sign"
+          height 0.8
+          length 1
+          texture [
+            "textures/highway_sign_la_ciotat.jpg"
+          ]
+        }
+      ]
+    }
+    HighwayPole {
+      translation -67.6 0 13
+      rotation 0 1 0 1.5708003061004252
+      name "highway pole(1)"
+      stand 2
+      height 1.5
+      length 3
+      thickness 0.1
+      curveRadius 0.3
+      rightHorizontalSigns [
+        HighwaySign {
+          translation 0 0 -0.5
+          name "vertical sign"
+          height 0.5
+          length 1
+        }
+      ]
+      rightVerticalSigns [
+        HighwaySign {
+          translation 0 -1.1 1
+          name "horizontal sign"
+          height 0.8
+          length 1
+          texture [
+            "textures/highway_sign_la_ciotat.jpg"
+          ]
+        }
+      ]
+    }
+    HighwayPole {
+      translation -71 0 0
+      stand 2
+      height 1.5
+      length 3
+      thickness 0.1
+      curveRadius 0.3
+      rightHorizontalSigns [
+        HighwaySign {
+          translation 0 0 -0.5
+          name "vertical sign"
+          height 0.5
+          length 1
+        }
+      ]
+      rightVerticalSigns [
+        HighwaySign {
+          translation 0 -1.1 1
+          name "horizontal sign"
+          height 0.8
+          length 1
+          texture [
+            "textures/highway_sign_la_ciotat.jpg"
+          ]
+        }
+      ]
+    }
+    ExitSign {
+      translation -49 0 4.5
+      rotation 0 1 0 -1.570795613280012
+      name "exit sign(4)"
+      height 1
+      signBoards [
+        ExitPanel {
+          translation 0 -1 0
+        }
+      ]
+    }
+    ExitSign {
+      translation -55.8 0 25.9
+      rotation 0 1 0 3.141592653589793
+      name "exit sign(7)"
+      height 1
+      signBoards [
+        ExitPanel {
+          translation 0 -1 0
+        }
+      ]
+    }
+    ExitSign {
+      translation -58.1 0 25.9
+      rotation 0 1 0 3.141592653589793
+      name "exit sign(5)"
+      height 1
+      signBoards [
+        ExitPanel {
+          translation 0 -1 0
+        }
+      ]
+    }
+    ExitSign {
+      translation -75 0 18
+      rotation 0 1 0 3.141592653589793
+      name "exit sign(2)"
+      height 1
+      signBoards [
+        ExitPanel {
+          translation 0 -1 0
+        }
+      ]
+    }
+    ExitSign {
+      translation -85 0 8.3
+      rotation 0 1 0 1.5707996938995747
+      name "exit sign(1)"
+      height 1
+      signBoards [
+        ExitPanel {
+          translation 0 -1 0
+        }
+      ]
+    }
+    ExitSign {
+      translation -64 0 -14
+      height 1
+      signBoards [
+        ExitPanel {
+          translation 0 -1 0
+        }
+      ]
+    }
+    Tree {
+      translation -69 0 -10.4
+      name "tree(12)"
+      scale 0.3 1 0.3
+    }
+    Tree {
+      translation -61 0 -10.4
+      name "tree(11)"
+      scale 0.3 1 0.3
+    }
+    Tree {
+      translation -57 0 -10.4
+      name "tree(10)"
+      scale 0.3 1 0.3
+    }
+    Tree {
+      translation -53 0 -10.4
+      name "tree(9)"
+      scale 0.3 1 0.3
+    }
+    Tree {
+      translation -53 0 -7.5
+      name "tree(8)"
+      scale 0.3 1 0.3
+    }
+    Tree {
+      translation -53 0 -4
+      name "tree(7)"
+      scale 0.3 1 0.3
+    }
+    Tree {
+      translation -53 0 4.5
+      name "tree(6)"
+      scale 0.3 1 0.3
+    }
+    Tree {
+      translation -53 0 8.5
+      name "tree(5)"
+      scale 0.3 1 0.3
+    }
+    Tree {
+      translation -53 0 12.5
+      name "tree(4)"
+      scale 0.3 1 0.3
+    }
+    Tree {
+      translation -53 0 16.5
+      name "tree(3)"
+      scale 0.3 1 0.3
+    }
+    Tree {
+      translation -53 0 20
+      name "tree(2)"
+      scale 0.3 1 0.3
+    }
+    Tree {
+      translation -53 0 23
+      name "tree(1)"
+      scale 0.3 1 0.3
+    }
+    Tree {
+      translation -53 0 0
+      scale 0.3 1 0.3
+    }
+  ]
+  name "solid(6)"
+}
+DEF Pillars Solid {
+  translation -8 0 0
+  name "solid(2)"
+}
+DEF Road2 Solid {
+  translation 21 0.001 0
+  children [
+    DEF downdepot6 StraightRoadSegment {
+      translation -83.4 0 -17.7
+      rotation 0 1 0 1.5707996938995747
+      name "road(153)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 0 0.498039
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 2.7
+      roadBoundingObject TRUE
+    }
+    DEF downright StraightRoadSegment {
+      translation -77.2 0 24.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(134)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.8
+      roadBoundingObject TRUE
+    }
+    DEF downright StraightRoadSegment {
+      translation -79.2 0 24.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(115)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.7
+      roadBoundingObject TRUE
+    }
+    DEF left StraightRoadSegment {
+      translation -104.5 0 12.3
+      name "road(138)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.7
+      roadBoundingObject TRUE
+    }
+    DEF left StraightRoadSegment {
+      translation -104.5 0 10.2
+      name "road(97)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.8
+      roadBoundingObject TRUE
+    }
+    DEF downleft StraightRoadSegment {
+      translation -95.2 0 17.5
+      name "road(152)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.6
+      roadBoundingObject TRUE
+    }
+    DEF downleft StraightRoadSegment {
+      translation -102.1 0 16.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(151)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.6
+      roadBoundingObject TRUE
+    }
+    DEF left StraightRoadSegment {
+      translation -105.5 0 13.4
+      rotation 0 1 0 -1.5707996938995747
+      name "road(150)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.6
+      roadBoundingObject TRUE
+    }
+    DEF left StraightRoadSegment {
+      translation -105.5 0 11.3
+      rotation 0 1 0 -1.5707996938995747
+      name "road(149)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.6
+      roadBoundingObject TRUE
+    }
+    DEF left StraightRoadSegment {
+      translation -105.5 0 9.2
+      rotation 0 1 0 -1.5707996938995747
+      name "road(148)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.6
+      roadBoundingObject TRUE
+    }
+    DEF left StraightRoadSegment {
+      translation -104.5 0 2.5
+      name "road(147)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.6
+      roadBoundingObject TRUE
+    }
+    DEF fourUp StraightRoadSegment {
+      translation -86 0 -14.1
+      name "road(146)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 0 1
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.6
+      roadBoundingObject TRUE
+    }
+    DEF fourUp StraightRoadSegment {
+      translation -77.5 0.001 -12.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(145)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.5
+      roadBoundingObject TRUE
+    }
+    DEF threeright StraightRoadSegment {
+      translation -71 0 3
+      rotation 0 1 0 1.5707996938995747
+      name "road(144)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.6
+      roadBoundingObject TRUE
+    }
+    DEF downright StraightRoadSegment {
+      translation -76 0 25.5
+      name "road(143)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.6
+      roadBoundingObject TRUE
+    }
+    DEF downright StraightRoadSegment {
+      translation -78.2 0 25.5
+      name "road(142)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.6
+      roadBoundingObject TRUE
+    }
+    DEF downright StraightRoadSegment {
+      translation -80.2 0 25.5
+      name "road(141)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.6
+      roadBoundingObject TRUE
+    }
+    DEF downright StraightRoadSegment {
+      translation -87.6 0 24.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(117)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.6
+      roadBoundingObject TRUE
+    }
+    DEF tworight StraightRoadSegment {
+      translation -72 0 15
+      name "road(111)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.6
+      roadBoundingObject TRUE
+    }
+    DEF fourUp StraightRoadSegment {
+      translation -79.9 0 -12.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(140)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 0 1
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1.2
+      roadBoundingObject TRUE
+    }
+    DEF fourUp StraightRoadSegment {
+      translation -78.7 0 -12.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(139)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.33333 0 0.5
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1.1
+      roadBoundingObject TRUE
+    }
+    DEF twoUpright StraightRoadSegment {
+      translation -77 0 -12.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(137)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 3.5
+      roadBoundingObject TRUE
+    }
+    DEF left StraightRoadSegment {
+      translation -104.5 0 14.4
+      name "road(136)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.6
+      roadBoundingObject TRUE
+    }
+    DEF left StraightRoadSegment {
+      translation -104.5 0 13
+      name "road(135)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1.4
+      roadBoundingObject TRUE
+    }
+    DEF left StraightRoadSegment {
+      translation -104.5 0 11
+      name "road(133)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1.3
+      roadBoundingObject TRUE
+    }
+    DEF left StraightRoadSegment {
+      translation -104.5 0 8.9
+      name "road(132)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1.3
+      roadBoundingObject TRUE
+    }
+    DEF left StraightRoadSegment {
+      translation -104.5 0 3.1
+      name "road(131)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1.3
+      roadBoundingObject TRUE
+    }
+    DEF left StraightRoadSegment {
+      translation -104.5 0 2
+      name "road(130)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.5
+      roadBoundingObject TRUE
+    }
+    DEF downleft StraightRoadSegment {
+      translation -94.2 0 16.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(129)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1.2
+      roadBoundingObject TRUE
+    }
+    DEF downleft StraightRoadSegment {
+      translation -95.5 0 16.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(128)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1.3
+      roadBoundingObject TRUE
+    }
+    DEF downleft StraightRoadSegment {
+      translation -101.5 0 16.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(127)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1.2
+      roadBoundingObject TRUE
+    }
+    DEF downleft StraightRoadSegment {
+      translation -103 0 16.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(125)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.9
+      roadBoundingObject TRUE
+    }
+    DEF downright StraightRoadSegment {
+      translation -75 0 24.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(124)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1.5
+      roadBoundingObject TRUE
+    }
+    DEF downright StraightRoadSegment {
+      translation -76.4 0 24.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(122)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1.4
+      roadBoundingObject TRUE
+    }
+    DEF downright StraightRoadSegment {
+      translation -78.5 0 24.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(116)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1.3
+      roadBoundingObject TRUE
+    }
+    DEF downright StraightRoadSegment {
+      translation -80.6 0 24.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(113)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1.3
+      roadBoundingObject TRUE
+    }
+    DEF downright StraightRoadSegment {
+      translation -87 0 24.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(108)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1.2
+      roadBoundingObject TRUE
+    }
+    DEF downright StraightRoadSegment {
+      translation -85.8 0 24.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(99)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 5.2
+      roadBoundingObject TRUE
+    }
+    DEF tworight StraightRoadSegment {
+      translation -72 0 13.8
+      name "road(98)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.6
+      roadBoundingObject TRUE
+    }
+    DEF tworight StraightRoadSegment {
+      translation -72 0 14.4
+      name "road(88)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.6
+      roadBoundingObject TRUE
+    }
+    DEF tworight StraightRoadSegment {
+      translation -72 0 12.6
+      name "road(81)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1.2
+      roadBoundingObject TRUE
+    }
+    DEF tworight StraightRoadSegment {
+      translation -72 0 15.6
+      name "road(80)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 7.4
+      roadBoundingObject TRUE
+    }
+    DEF tworighttrans StraightRoadSegment {
+      translation -64 0 2
+      rotation 0 1 0 -1.5707996938995747
+      name "road(79)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0 0 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1
+      roadBoundingObject TRUE
+    }
+    DEF tworighttrans StraightRoadSegment {
+      translation -64 0 3
+      name "road(62)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0 0 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1
+      roadBoundingObject TRUE
+    }
+    DEF rightcurve4 CurvedRoadSegment {
+      translation -65 0 3
+      rotation 0 1 0 1.5707996938995747
+      name "road(56)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0 0 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF updepot2 StraightRoadSegment {
+      translation -87 0 -17.9
+      name "road(75)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 1 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1.2
+      roadBoundingObject TRUE
+    }
+    DEF uppick4 CurvedRoadSegment {
+      translation -86 0 -16.7
+      rotation 0 1 0 3.141592653589793
+      name "road(61)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 1 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF downdepot6 StraightRoadSegment {
+      translation -86 0 -17.7
+      rotation 0 1 0 1.5707996938995747
+      name "road(18)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 1 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1
+      roadBoundingObject TRUE
+    }
+    DEF twodownpick4 CurvedRoadSegment {
+      translation -75 0.001 25.5
+      rotation 0 1 0 3.141592653589793
+      name "road(114)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF threedowndepot4 StraightRoadSegment {
+      translation -76 0 26.1
+      name "road(112)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 1 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 4.2
+      roadBoundingObject TRUE
+    }
+    DEF threedownpick8 CurvedRoadSegment {
+      translation -77 0 30.3
+      name "road(110)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 1 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF threedowndepot6 StraightRoadSegment {
+      translation -80.7 0 31.3
+      rotation 0 1 0 1.5707996938995747
+      name "road(101)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 1 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 3.7
+      roadBoundingObject TRUE
+    }
+    DEF twodownpick4 CurvedRoadSegment {
+      translation -77.2 0.001 25.5
+      rotation 0 1 0 3.141592653589793
+      name "road(82)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF twostop2 StraightRoadSegment {
+      translation -80.7 0 30.3
+      rotation 0 1 0 -1.5707996938995747
+      name "road(63)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 1 0 0
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.3
+      roadBoundingObject TRUE
+    }
+    DEF twostop1 StraightRoadSegment {
+      translation -110.3 0 9
+      name "road(51)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 1 0 0
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.3
+      roadBoundingObject TRUE
+    }
+    DEF stop2 StraightRoadSegment {
+      translation -81.2 0 29.5
+      rotation 0 1 0 -1.5707996938995747
+      name "road(65)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 1 0 0
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.3
+      roadBoundingObject TRUE
+    }
+    DEF tworightcurve2 CurvedRoadSegment {
+      translation -71 0.001 15
+      rotation 0 1 0 3.141592653589793
+      name "road(83)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0 0 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+      contactMaterial ""
+    }
+    DEF twodowndepot6 StraightRoadSegment {
+      translation -86 0 31.3
+      rotation 0 1 0 1.5707996938995747
+      name "road(78)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 1 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 5.3
+      roadBoundingObject TRUE
+    }
+    DEF twodownpick7 CurvedRoadSegment {
+      translation -86 0 30.3
+      rotation 0 1 0 -1.5708003061004252
+      name "road(77)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 1 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF twodowndepot3 StraightRoadSegment {
+      translation -87 0 29.3
+      name "road(76)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 1 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1
+      roadBoundingObject TRUE
+    }
+    DEF tworightpickstrai2 StraightRoadSegment {
+      translation -110.1 0 2
+      rotation 0 1 0 1.5707996938995747
+      name "road(74)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0 0 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.8
+      roadBoundingObject TRUE
+    }
+    DEF threeleftpick3 CurvedRoadSegment {
+      translation -110.1 0 3
+      rotation 0 1 0 3.141592653589793
+      name "road(73)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0 0 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF fourleft StraightRoadSegment {
+      translation -111.1 0 3
+      name "road(72)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0 0 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 6.3
+      roadBoundingObject TRUE
+    }
+    DEF threeleftpick2 CurvedRoadSegment {
+      translation -105.5 0.001 14.4
+      rotation 0 1 0 1.5707996938995747
+      name "road(71)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF threerightpickstrai1 StraightRoadSegment {
+      translation -110.1 0 13.4
+      rotation 0 1 0 1.5707996938995747
+      name "road(70)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0 0 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 4
+      roadBoundingObject TRUE
+    }
+    DEF threeleftpick3 CurvedRoadSegment {
+      translation -110.1 0 12.4
+      rotation 0 1 0 -1.5707996938995747
+      name "road(69)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0 0 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF threeleft StraightRoadSegment {
+      translation -111.1 0 9.3
+      name "road(68)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0 0 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 3.1
+      roadBoundingObject TRUE
+    }
+    DEF tworightcurve5 CurvedRoadSegment {
+      translation -64 0 3
+      rotation 0 1 0 1.5707996938995747
+      name "road(60)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0 0 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF fourrighttrans StraightRoadSegment {
+      translation -63 0 3
+      name "road(58)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0 0 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      pavementAppearance Pavement {
+        type "black stone"
+      }
+      roadBoundingObject TRUE
+    }
+    DEF tworightcurve3 CurvedRoadSegment {
+      translation -64 0 13
+      name "road(57)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0 0 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF tworightdepot1 StraightRoadSegment {
+      translation -71 0 14
+      rotation 0 1 0 1.5707996938995747
+      name "road(55)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0 0 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 7
+      roadBoundingObject TRUE
+    }
+    DEF threerighttrans StraightRoadSegment {
+      translation -64 0 6.3
+      name "road(54)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.666667 0.333333 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 5.5
+      pavementAppearance Pavement {
+        type "grid"
+      }
+      bottomTexture [
+        ""
+      ]
+      roadBoundingObject TRUE
+    }
+    DEF threeleft StraightRoadSegment {
+      translation -110.3 0 9.3
+      name "road(126)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 1 0.505882 0.0117647
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1
+      roadBoundingObject TRUE
+    }
+    DEF twoleft StraightRoadSegment {
+      translation -100.7 0 0.4
+      name "road(66)"
+      width 0.3
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.3
+      roadBoundingObject TRUE
+    }
+    DEF threedowndepot6 StraightRoadSegment {
+      translation -80.7 0 30.3
+      rotation 0 1 0 1.5707996938995747
+      name "road(123)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 1 0
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1.5
+      roadBoundingObject TRUE
+    }
+    DEF High3 Road {
+      translation -105.3 0.5 2
+      rotation 0 1 0 -1.5707996938995747
+      name "road(52)"
+      width 0.6
+      lines [
+        RoadLine {
+          color 0 0 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      roadBorderHeight -1.73472e-18
+      roadBorderWidth [
+        0.005
+      ]
+      wayPoints [
+        0 0 0
+        0 -0.006 0.3
+        0 -0.03 0.5
+        0 -0.45 3.4
+        0 -0.49 4
+        0 -0.5 4
+      ]
+      roadBoundingObject TRUE
+      rightBorderBoundingObject TRUE
+      leftBorderBoundingObject TRUE
+    }
+    DEF fourUp StraightRoadSegment {
+      translation -87 0 -12.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(121)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 0 1
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1.3
+      roadBoundingObject TRUE
+    }
+    DEF twoUpright StraightRoadSegment {
+      translation -85.7 0 -12.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(120)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 5.8
+      roadBoundingObject TRUE
+    }
+    DEF threeright StraightRoadSegment {
+      translation -72 0 2
+      name "road(119)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "none"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1.4
+      roadBoundingObject TRUE
+    }
+    DEF tworight StraightRoadSegment {
+      translation -72 0 3.4
+      name "road(118)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 9.2
+      roadBoundingObject TRUE
+    }
+    DEF tworighttrans StraightRoadSegment {
+      translation -64 0 4
+      name "road(109)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.666667 0.333333 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 2
+      pavementAppearance Pavement {
+        type "grid"
+      }
+      roadBoundingObject TRUE
+    }
+    DEF twoleftpick2 CurvedRoadSegment {
+      translation -105.5 0.001 12.3
+      rotation 0 1 0 1.5707996938995747
+      name "road(107)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF tworightpickstrai1 StraightRoadSegment {
+      translation -109.3 0 11.3
+      rotation 0 1 0 1.5707996938995747
+      name "road(106)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 1 0.505882 0.0117647
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 3.2
+      roadBoundingObject TRUE
+    }
+    DEF twoleftpick3 CurvedRoadSegment {
+      translation -109.3 0 10.3
+      rotation 0 1 0 -1.5707996938995747
+      name "road(105)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 1 0.505882 0.0117647
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF twoleft StraightRoadSegment {
+      translation -110.3 0 3
+      name "road(104)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 1 0.505882 0.0117647
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 6
+      roadBoundingObject TRUE
+    }
+    DEF twoleftpick3 CurvedRoadSegment {
+      translation -109.3 0 3
+      rotation 0 1 0 3.141592653589793
+      name "road(103)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 1 0.505882 0.0117647
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF High5 StraightRoadSegment {
+      translation -105.3 0.5 2
+      rotation 0 1 0 1.5707996938995747
+      name "road(102)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0 0 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      roadBorderHeight 0.03
+      startingRoadBorderWidth 0.02
+      endingRoadBorderWidth 0.02
+      length 36.3
+      roadBoundingObject TRUE
+      rightBorderBoundingObject TRUE
+      leftBorderBoundingObject TRUE
+    }
+    DEF High4 Road {
+      translation -69 0.5 2
+      rotation 0 1 0 1.5707996938995747
+      name "road(100)"
+      width 0.6
+      lines [
+        RoadLine {
+          color 0 0 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      roadBorderHeight -1.73472e-18
+      roadBorderWidth [
+        0.005
+      ]
+      wayPoints [
+        0 0 0
+        0 -0.006 0.3
+        0 -0.03 0.5
+        0 -0.45 3.4
+        0 -0.49 4
+        0 -0.5 4
+      ]
+      roadBoundingObject TRUE
+      rightBorderBoundingObject TRUE
+      leftBorderBoundingObject TRUE
+    }
+    DEF twouppick4 CurvedRoadSegment {
+      translation -86 0 -17.9
+      rotation 0 1 0 3.141592653589793
+      name "road(96)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 1 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF twodowndepot6 StraightRoadSegment {
+      translation -86 0 -18.9
+      rotation 0 1 0 1.5707996938995747
+      name "road(95)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 1 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 6.5
+      roadBoundingObject TRUE
+    }
+    DEF updepot2 StraightRoadSegment {
+      translation -79.7 0 -16.7
+      name "road(94)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 0 0.498039
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 3.2
+      roadBoundingObject TRUE
+    }
+    DEF twouppick3 CurvedRoadSegment {
+      translation -79.5 0 -17.9
+      rotation 0 1 0 1.5708003061004252
+      name "road(93)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 1 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF twouppick2 CurvedRoadSegment {
+      translation -77.5 0 -13.5
+      rotation 0 1 0 -1.5708003061004252
+      name "road(92)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 1 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF High2 Road {
+      translation -87 0.25 -14.7
+      rotation 0 1 0 -3.141592653589793
+      name "road(91)"
+      width 0.6
+      lines [
+        RoadLine {
+          color 0.333333 1 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      roadBorderHeight -1.73472e-18
+      roadBorderWidth [
+        0.005
+      ]
+      bottom TRUE
+      wayPoints [
+        0 0 0
+        0 -0.0025 0.17
+        0 -0.015 0.5
+        0 -0.225 1.8
+        0 -0.245 2
+        0 -0.25 2
+      ]
+      roadBoundingObject TRUE
+      rightBorderBoundingObject TRUE
+      leftBorderBoundingObject TRUE
+    }
+    DEF High StraightRoadSegment {
+      translation -87 0.25 -14.7
+      name "road(90)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 1 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      roadBorderHeight 0.03
+      startingRoadBorderWidth 0.02
+      endingRoadBorderWidth 0.02
+      length 42
+      roadBoundingObject TRUE
+      rightBorderBoundingObject TRUE
+      leftBorderBoundingObject TRUE
+    }
+    DEF twodowndepot4 StraightRoadSegment {
+      translation -78.2 0 26.1
+      name "road(87)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 1 0
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 3.2
+      roadBoundingObject TRUE
+    }
+    DEF twodownpick8 CurvedRoadSegment {
+      translation -79.2 0 29.3
+      name "road(86)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 1 0
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF twodowndepot6 StraightRoadSegment {
+      translation -86 0 30.3
+      rotation 0 1 0 1.5707996938995747
+      name "road(85)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 1 0
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 5
+      roadBoundingObject TRUE
+    }
+    DEF twodownpick7 CurvedRoadSegment {
+      translation -86 0 29.3
+      rotation 0 1 0 -1.5708003061004252
+      name "road(84)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 1 0
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF High1 Road {
+      translation -87 0.25 27.3
+      name "road(89)"
+      width 0.6
+      lines [
+        RoadLine {
+          color 0.333333 1 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      roadBorderHeight -1.73472e-18
+      roadBorderWidth [
+        0.005
+      ]
+      wayPoints [
+        0 0 0
+        0 -0.0025 0.17
+        0 -0.015 0.5
+        0 -0.225 1.8
+        0 -0.245 2
+        0 -0.25 2
+      ]
+      roadBoundingObject TRUE
+      rightBorderBoundingObject TRUE
+      leftBorderBoundingObject TRUE
+    }
+    DEF stop1 StraightRoadSegment {
+      translation -109.5 0 7.9
+      name "road(67)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 1 0 0
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.3
+      roadBoundingObject TRUE
+    }
+    DEF stop6 StraightRoadSegment {
+      translation -83.4 0 -17.7
+      rotation 0 1 0 -1.5707996938995747
+      name "road(64)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 1 0 0
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.3
+      roadBoundingObject TRUE
+    }
+    DEF stop3 StraightRoadSegment {
+      translation -64 0 6
+      name "road(59)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 1 0 0
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.3
+      roadBoundingObject TRUE
+    }
+    DEF stop1 StraightRoadSegment {
+      translation -96.2 0 21.5
+      rotation 0 1 0 -1.5707996938995747
+      name "road(53)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 1 0 0
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.3
+      roadBoundingObject TRUE
+    }
+    DEF downdepot6 StraightRoadSegment {
+      translation -85 0 -17.7
+      rotation 0 1 0 1.5707996938995747
+      name "road(50)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 0 0.498039
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1.3
+      roadBoundingObject TRUE
+    }
+    DEF uppick4 CurvedRoadSegment {
+      translation -85 0 -16.7
+      rotation 0 1 0 3.141592653589793
+      name "road(49)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 0 0.498039
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF uppick3 CurvedRoadSegment {
+      translation -80.7 0 -16.7
+      rotation 0 1 0 1.5708003061004252
+      name "road(48)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 0 0.498039
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF updepot2 StraightRoadSegment {
+      translation -78.5 0 -17.9
+      name "road(47)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 1 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 4.4
+      roadBoundingObject TRUE
+    }
+    DEF updepot1 StraightRoadSegment {
+      translation -86 0 -16.7
+      name "road(46)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 0 0.498039
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 2.6
+      roadBoundingObject TRUE
+    }
+    DEF uppick2 CurvedRoadSegment {
+      translation -78.7 0.001 -13.5
+      rotation 0 1 0 -1.5708003061004252
+      name "road(45)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 0 0.498039
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF uppick1 CurvedRoadSegment {
+      translation -87 0.001 -13.5
+      name "road(44)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF downpick8 CurvedRoadSegment {
+      translation -81.2 0 28.5
+      name "road(43)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 1 0
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF downpick7 CurvedRoadSegment {
+      translation -85 0 28.5
+      rotation 0 1 0 -1.5708003061004252
+      name "road(42)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 1 0
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF downdepot6 StraightRoadSegment {
+      translation -85 0 29.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(41)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 1 0
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 3.5
+      roadBoundingObject TRUE
+    }
+    DEF downdepot5 StraightRoadSegment {
+      translation -99.5 0 21.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(40)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 1 1 0
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 3
+      roadBoundingObject TRUE
+    }
+    DEF downpick6 CurvedRoadSegment {
+      translation -96.2 0 20.5
+      name "road(39)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 1 1 0
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF downpick5 CurvedRoadSegment {
+      translation -99.5 0 20.5
+      rotation 0 1 0 -1.5708003061004252
+      name "road(38)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 1 1 0
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF downdepot4 StraightRoadSegment {
+      translation -80.2 0 26.1
+      name "road(37)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 1 0
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 2.4
+      roadBoundingObject TRUE
+    }
+    DEF downdepot3 StraightRoadSegment {
+      translation -86 0 25.5
+      name "road(36)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 1 0
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 3
+      roadBoundingObject TRUE
+    }
+    DEF downdepot2 StraightRoadSegment {
+      translation -95.2 0 18.1
+      name "road(35)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 1 1 0
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 2.4
+      roadBoundingObject TRUE
+    }
+    DEF downdepot1 StraightRoadSegment {
+      translation -100.5 0 17.5
+      name "road(34)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 1 1 0
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 3
+      roadBoundingObject TRUE
+    }
+    DEF downpick4 CurvedRoadSegment {
+      translation -79.2 0.001 25.5
+      rotation 0 1 0 3.141592653589793
+      name "road(33)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF downpick2 CurvedRoadSegment {
+      translation -94.2 0.001 17.5
+      rotation 0 1 0 3.141592653589793
+      name "road(32)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF downpick3 CurvedRoadSegment {
+      translation -87 0.001 25.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(31)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.333333 1 0
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF downpick1 CurvedRoadSegment {
+      translation -101.5 0.001 17.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(30)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 1 1 0
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF leftdepot StraightRoadSegment {
+      translation -109.5 0 5.1
+      name "road(29)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 1 0.505882 0.0117647
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 2.8
+      roadBoundingObject TRUE
+    }
+    DEF leftpick3 CurvedRoadSegment {
+      translation -108.5 0 8.2
+      rotation 0 1 0 -1.5707996938995747
+      name "road(28)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 1 0.505882 0.0117647
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF leftpick3 CurvedRoadSegment {
+      translation -108.5 0 5.1
+      rotation 0 1 0 3.141592653589793
+      name "road(27)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 1 0.505882 0.0117647
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF rightpickstrai2 StraightRoadSegment {
+      translation -108.5 0 4.1
+      rotation 0 1 0 1.5707996938995747
+      name "road(26)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 1 0.505882 0.0117647
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 3
+      roadBoundingObject TRUE
+    }
+    DEF rightpickstrai1 StraightRoadSegment {
+      translation -108.5 0 9.2
+      rotation 0 1 0 1.5707996938995747
+      name "road(25)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 1 0.505882 0.0117647
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 2.4
+      roadBoundingObject TRUE
+    }
+    DEF leftpick2 CurvedRoadSegment {
+      translation -105.5 0.001 10.2
+      rotation 0 1 0 1.5707996938995747
+      name "road(24)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF leftpick1 CurvedRoadSegment {
+      translation -105.5 0.001 3.1
+      name "road(23)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 1 0.505882 0.0117647
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF rightcurve6 CurvedRoadSegment {
+      translation -73.5 0 -11
+      rotation 0 1 0 1.5707996938995747
+      name "road(22)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1.5
+      roadBoundingObject TRUE
+    }
+    DEF rightdepot2 StraightRoadSegment {
+      translation -70.4 0 3
+      rotation 0 1 0 1.5707996938995747
+      name "road(21)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.666667 0.333333 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 5.4
+      roadBoundingObject TRUE
+    }
+    DEF rightcurve5 CurvedRoadSegment {
+      translation -71 0 2
+      rotation 0 1 0 -1.5707996938995747
+      name "road(20)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF rightcurve4 CurvedRoadSegment {
+      translation -65 0 4
+      rotation 0 1 0 1.5707996938995747
+      name "road(19)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.666667 0.333333 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF rightcurve3 CurvedRoadSegment {
+      translation -65 0 11.8
+      name "road(17)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.666667 0.333333 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF rightdepot1 StraightRoadSegment {
+      translation -71 0 12.8
+      rotation 0 1 0 1.5707996938995747
+      name "road(16)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.666667 0.333333 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 6
+      roadBoundingObject TRUE
+    }
+    DEF rightcurve2 CurvedRoadSegment {
+      translation -71 0.001 13.8
+      rotation 0 1 0 3.141592653589793
+      name "road(15)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          color 0.666667 0.333333 1
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1
+      roadBoundingObject TRUE
+    }
+    DEF right StraightRoadSegment {
+      translation -72 0 -11
+      name "road(14)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 13
+      roadBoundingObject TRUE
+    }
+    DEF rightcurve1 CurvedRoadSegment {
+      translation -73.5 0 23
+      name "road(13)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1.5
+      roadBoundingObject TRUE
+    }
+    DEF downtrans StraightRoadSegment {
+      translation -91.5 0 18
+      name "road(12)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 5
+      roadBoundingObject TRUE
+    }
+    DEF Uptrans StraightRoadSegment {
+      translation -94.5 0 -11
+      name "road(11)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      roadBoundingObject TRUE
+    }
+    DEF downright StraightRoadSegment {
+      translation -90 0 24.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(10)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 2.4
+      roadBoundingObject TRUE
+    }
+    DEF dowmcurve2 CurvedRoadSegment {
+      translation -90 0 23
+      rotation 0 1 0 -1.5707996938995747
+      name "road(9)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1.5
+      roadBoundingObject TRUE
+    }
+    DEF dowmcurve1 CurvedRoadSegment {
+      translation -93 0 18
+      rotation 0 1 0 1.5707996938995747
+      name "road(8)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1.5
+      roadBoundingObject TRUE
+    }
+    DEF downleft StraightRoadSegment {
+      translation -100.3 0 16.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(7)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 4.8
+      roadBoundingObject TRUE
+    }
+    DEF Leftcurve2 CurvedRoadSegment {
+      translation -103 0 15
+      rotation 0 1 0 -1.5707996938995747
+      name "road(6)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1.5
+      roadBoundingObject TRUE
+    }
+    DEF left StraightRoadSegment {
+      translation -104.5 0 4.4
+      name "road(5)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 4.5
+      roadBoundingObject TRUE
+    }
+    DEF Leftcurve1 CurvedRoadSegment {
+      translation -103 0 2
+      rotation 0 1 0 -3.141592653589793
+      name "road(4)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1.5
+      roadBoundingObject TRUE
+    }
+    DEF Upright StraightRoadSegment {
+      translation -93 0 -12.5
+      rotation 0 1 0 1.5707996938995747
+      name "road(3)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 6
+      roadBoundingObject TRUE
+    }
+    DEF Upcurve2 CurvedRoadSegment {
+      translation -93 0 -11
+      rotation 0 1 0 -3.141592653589793
+      name "road(2)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1.5
+      roadBoundingObject TRUE
+    }
+    DEF Upleft StraightRoadSegment {
+      translation -103 0 0.5
+      rotation 0 1 0 1.5707996938995747
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      length 7
+      roadBoundingObject TRUE
+    }
+    DEF Upcurve1 CurvedRoadSegment {
+      translation -96 0 -1
+      name "road(1)"
+      width 0.6
+      numberOfForwardLanes 0
+      lines [
+        RoadLine {
+          type "continuous"
+          width 0.03
+        }
+      ]
+      rightBorder FALSE
+      leftBorder FALSE
+      curvatureRadius 1.5
+      roadBoundingObject TRUE
+    }
+  ]
+  name "solid(4)"
+}
+DEF Pick11 Floor {
+  translation -77 0.01 19
+  name "floor(6)"
+  size 3 3
+  tileSize 1 1
+  appearance Parquetry {
+    type "dark strip"
+    colorOverride 1 0.580392 0.541176
+  }
+}
+DEF Pick22 Floor {
+  translation -62.4 0.01 27
+  name "floor(7)"
+  size 4 3
+  tileSize 1 1
+  appearance Parquetry {
+    type "dark strip"
+    colorOverride 1 0.580392 0.541176
+  }
+}
+DEF Pick33 Floor {
+  translation -61.5 0.01 -15
+  name "floor(8)"
+  size 4 3
+  tileSize 1 1
+  appearance Parquetry {
+    type "dark strip"
+    colorOverride 1 0.580392 0.541176
+  }
+}
+DEF Pick44 Floor {
+  translation -86 0.01 6.4
+  name "floor(9)"
+  size 3 3.5
+  tileSize 1 1
+  appearance Parquetry {
+    type "dark strip"
+    colorOverride 1 0.580392 0.541176
+  }
+}
+Robot {
+  translation -43 0.05 7.2
+  rotation 6.544299998632453e-06 0.9999999997910323 1.9367699995952776e-05 -3.14
+  children [
+    DEF BODY Shape {
+      appearance PBRAppearance {
+        metalness 0
+      }
+      geometry Box {
+        size 0.12 0.008 0.24
+      }
+    }
+    DEF CABIN Solid {
+      translation 0 0.048 0.088
+      children [
+        DEF CABIN Shape {
+          appearance PBRAppearance {
+            baseColor 1 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.12 0.08 0.064
+          }
+        }
+      ]
+      name "solid(4)"
+      boundingObject USE CABIN
+      physics Physics {
+      }
+    }
+    DEF TRUNK Solid {
+      translation 0 0.056 -0.032
+      children [
+        DEF TRUNK Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.12 0.096 0.176
+          }
+        }
+      ]
+      name "solid(5)"
+      boundingObject USE TRUNK
+      physics Physics {
+      }
+    }
+    Camera {
+      translation 0 0.0125882 0.12
+      rotation 5.1289091992824446e-08 -0.9659258492011157 -0.2588189595935751 -3.1415853071795863
+      children [
+        DEF c1 Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.002 0.002 0.002
+          }
+        }
+      ]
+      boundingObject USE c1
+      physics Physics {
+      }
+      width 16
+      height 16
+    }
+    DistanceSensor {
+      translation 0.04 0 0.12
+      rotation 0 1 0 -1.5707953071795862
+      children [
+        DEF ds Shape {
+          appearance PBRAppearance {
+            baseColor 0 0 0
+          }
+          geometry Box {
+            size 0.002 0.002 0.002
+          }
+        }
+      ]
+      name "ds_left"
+      boundingObject USE ds
+      physics Physics {
+      }
+      lookupTable [
+        0 0 0
+        1 1000 0
+      ]
+    }
+    DistanceSensor {
+      translation -0.04 0 0.12
+      rotation 0 -1 0 1.5708
+      children [
+        USE ds
+      ]
+      name "ds_right"
+      boundingObject USE ds
+      physics Physics {
+      }
+      lookupTable [
+        0 0 0
+        1 1000 0
+      ]
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 128.55882482663796
+        anchor 0.072 -3.41413e-05 0.07
+      }
+      device [
+        RotationalMotor {
+          name "motor1"
+          maxVelocity 50
+          maxTorque 20
+        }
+      ]
+      endPoint DEF WHEEL1 Solid {
+        translation 0.072 -3.41413e-05 0.07
+        rotation -0.7041650501682469 0.7041677060843536 -0.09110117358985875 3.323292561582297
+        children [
+          DEF WHEEL Shape {
+            appearance PBRAppearance {
+              baseColor 0.321569 0.321569 0.321569
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.02
+              radius 0.04
+            }
+          }
+        ]
+        boundingObject USE WHEEL
+        physics DEF WHEEL_PH Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 116.2672712442698
+        anchor -0.072 -3.41413e-05 0.07
+      }
+      device [
+        RotationalMotor {
+          name "motor2"
+          maxVelocity 50
+          maxTorque 20
+        }
+      ]
+      endPoint DEF WHEEL2 Solid {
+        translation -0.072 -3.41413e-05 0.07
+        rotation -0.7070918984346697 0.7070946009458949 0.006186475670366668 3.1292197670514263
+        children [
+          USE WHEEL
+        ]
+        name "solid(3)"
+        boundingObject USE WHEEL
+        physics DEF WHEEL_PH Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 128.55888746682956
+        anchor 0.072 -3.41413e-05 -0.07
+      }
+      device [
+        RotationalMotor {
+          name "motor3"
+          maxVelocity 50
+          maxTorque 20
+        }
+      ]
+      endPoint DEF WHEEL3 Solid {
+        translation 0.072 -3.41413e-05 -0.07
+        rotation -0.7041664973033155 0.704169134667663 -0.0910789429943856 3.3232484338743884
+        children [
+          USE WHEEL
+        ]
+        name "solid(2)"
+        boundingObject USE WHEEL
+        physics DEF WHEEL_PH Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 116.26723694373537
+        anchor -0.072 -3.41413e-05 -0.07
+      }
+      device [
+        RotationalMotor {
+          name "motor4"
+          maxVelocity 50
+          maxTorque 20
+        }
+      ]
+      endPoint DEF WHEEL4 Solid {
+        translation -0.072 -3.41413e-05 -0.07
+        rotation -0.7070919571460941 0.7070946483271566 0.006174337729732731 3.1292439978830675
+        children [
+          USE WHEEL
+        ]
+        name "solid(1)"
+        boundingObject USE WHEEL
+        physics DEF WHEEL_PH Physics {
+        }
+      }
+    }
+  ]
+  name "truck1"
+  boundingObject USE BODY
+  physics Physics {
+    density -1
+    mass 1
+  }
+  controller "follow_line"
+}
+DEF Robot2 Robot {
+  translation -43 0.0499392 8.2
+  rotation 6.544299998632453e-06 0.9999999997910323 1.9367699995952776e-05 -3.14
+  children [
+    DEF BODY Shape {
+      appearance PBRAppearance {
+        metalness 0
+      }
+      geometry Box {
+        size 0.12 0.008 0.24
+      }
+    }
+    DEF CABIN Solid {
+      translation 0 0.048 0.088
+      children [
+        DEF CABIN Shape {
+          appearance PBRAppearance {
+            baseColor 0.333333 1 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.12 0.08 0.064
+          }
+        }
+      ]
+      name "solid(4)"
+      boundingObject USE CABIN
+      physics Physics {
+      }
+    }
+    DEF TRUNK Solid {
+      translation 0 0.056 -0.032
+      children [
+        DEF TRUNK Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.12 0.096 0.176
+          }
+        }
+      ]
+      name "solid(5)"
+      boundingObject USE TRUNK
+      physics Physics {
+      }
+    }
+    Camera {
+      translation 0 0.0125882 0.12
+      rotation 5.1289091992824446e-08 -0.9659258492011157 -0.2588189595935751 -3.1415853071795863
+      children [
+        DEF c1 Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.002 0.002 0.002
+          }
+        }
+      ]
+      boundingObject USE c1
+      physics Physics {
+      }
+      width 16
+      height 16
+    }
+    DistanceSensor {
+      translation 0.04 0 0.12
+      rotation 0 1 0 -1.5707953071795862
+      children [
+        DEF ds Shape {
+          appearance PBRAppearance {
+            baseColor 0 0 0
+          }
+          geometry Box {
+            size 0.002 0.002 0.002
+          }
+        }
+      ]
+      name "ds_left"
+      boundingObject USE ds
+      physics Physics {
+      }
+      lookupTable [
+        0 0 0
+        1 1000 0
+      ]
+    }
+    DistanceSensor {
+      translation -0.04 0 0.12
+      rotation 0 -1 0 1.5708
+      children [
+        USE ds
+      ]
+      name "ds_right"
+      boundingObject USE ds
+      physics Physics {
+      }
+      lookupTable [
+        0 0 0
+        1 1000 0
+      ]
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 128.55882482663796
+        anchor 0.072 -3.41413e-05 0.07
+      }
+      device [
+        RotationalMotor {
+          name "motor1"
+          maxVelocity 50
+          maxTorque 20
+        }
+      ]
+      endPoint DEF WHEEL1 Solid {
+        translation 0.072 -3.41413e-05 0.07
+        rotation -0.7041650501682469 0.7041677060843536 -0.09110117358985877 3.323292561582298
+        children [
+          DEF WHEEL Shape {
+            appearance PBRAppearance {
+              baseColor 0.321569 0.321569 0.321569
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.02
+              radius 0.04
+            }
+          }
+        ]
+        boundingObject USE WHEEL
+        physics DEF WHEEL_PH Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 116.2672712442698
+        anchor -0.072 -3.41413e-05 0.07
+      }
+      device [
+        RotationalMotor {
+          name "motor2"
+          maxVelocity 50
+          maxTorque 20
+        }
+      ]
+      endPoint DEF WHEEL2 Solid {
+        translation -0.072 -3.41413e-05 0.07
+        rotation -0.7070918984346697 0.7070946009458949 0.006186475670366678 3.129219767051427
+        children [
+          USE WHEEL
+        ]
+        name "solid(3)"
+        boundingObject USE WHEEL
+        physics DEF WHEEL_PH Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 128.55888746682956
+        anchor 0.072 -3.41413e-05 -0.07
+      }
+      device [
+        RotationalMotor {
+          name "motor3"
+          maxVelocity 50
+          maxTorque 20
+        }
+      ]
+      endPoint DEF WHEEL3 Solid {
+        translation 0.072 -3.41413e-05 -0.07
+        rotation -0.7041664973033155 0.704169134667663 -0.09107894299438547 3.3232484338743866
+        children [
+          USE WHEEL
+        ]
+        name "solid(2)"
+        boundingObject USE WHEEL
+        physics DEF WHEEL_PH Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 116.26723694373537
+        anchor -0.072 -3.41413e-05 -0.07
+      }
+      device [
+        RotationalMotor {
+          name "motor4"
+          maxVelocity 50
+          maxTorque 20
+        }
+      ]
+      endPoint DEF WHEEL4 Solid {
+        translation -0.072 -3.41413e-05 -0.07
+        rotation -0.7070919571460944 0.7070946483271564 0.006174337729732787 3.129243997883069
+        children [
+          USE WHEEL
+        ]
+        name "solid(1)"
+        boundingObject USE WHEEL
+        physics DEF WHEEL_PH Physics {
+        }
+      }
+    }
+  ]
+  name "truck2"
+  boundingObject USE BODY
+  physics Physics {
+    density -1
+    mass 1
+  }
+  controller "follow_line2"
+}
+DEF Robot3 Robot {
+  translation -43 0.0499392 9.2
+  rotation 6.544299998632453e-06 0.9999999997910323 1.9367699995952776e-05 -3.14
+  children [
+    DEF BODY Shape {
+      appearance PBRAppearance {
+        metalness 0
+      }
+      geometry Box {
+        size 0.12 0.008 0.24
+      }
+    }
+    DEF CABIN Solid {
+      translation 0 0.048 0.088
+      children [
+        DEF CABIN Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.333333 0.333333
+            metalness 0
+          }
+          geometry Box {
+            size 0.12 0.08 0.064
+          }
+        }
+      ]
+      name "solid(4)"
+      boundingObject USE CABIN
+      physics Physics {
+      }
+    }
+    DEF TRUNK Solid {
+      translation 0 0.056 -0.032
+      children [
+        DEF TRUNK Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.12 0.096 0.176
+          }
+        }
+      ]
+      name "solid(5)"
+      boundingObject USE TRUNK
+      physics Physics {
+      }
+    }
+    Camera {
+      translation 0 0.0125882 0.12
+      rotation 5.1289091992824446e-08 -0.9659258492011157 -0.2588189595935751 -3.1415853071795863
+      children [
+        DEF c1 Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.002 0.002 0.002
+          }
+        }
+      ]
+      boundingObject USE c1
+      physics Physics {
+      }
+      width 16
+      height 16
+    }
+    DistanceSensor {
+      translation 0.04 0 0.12
+      rotation 0 1 0 -1.5707953071795862
+      children [
+        DEF ds Shape {
+          appearance PBRAppearance {
+            baseColor 0 0 0
+          }
+          geometry Box {
+            size 0.002 0.002 0.002
+          }
+        }
+      ]
+      name "ds_left"
+      boundingObject USE ds
+      physics Physics {
+      }
+      lookupTable [
+        0 0 0
+        1 1000 0
+      ]
+    }
+    DistanceSensor {
+      translation -0.04 0 0.12
+      rotation 0 -1 0 1.5708
+      children [
+        USE ds
+      ]
+      name "ds_right"
+      boundingObject USE ds
+      physics Physics {
+      }
+      lookupTable [
+        0 0 0
+        1 1000 0
+      ]
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 128.55882482663796
+        anchor 0.072 -3.41413e-05 0.07
+      }
+      device [
+        RotationalMotor {
+          name "motor1"
+          maxVelocity 50
+          maxTorque 20
+        }
+      ]
+      endPoint DEF WHEEL1 Solid {
+        translation 0.072 -3.41413e-05 0.07
+        rotation -0.7041650501682469 0.7041677060843536 -0.09110117358985874 3.3232925615822975
+        children [
+          DEF WHEEL Shape {
+            appearance PBRAppearance {
+              baseColor 0.321569 0.321569 0.321569
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.02
+              radius 0.04
+            }
+          }
+        ]
+        boundingObject USE WHEEL
+        physics DEF WHEEL_PH Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 116.2672712442698
+        anchor -0.072 -3.41413e-05 0.07
+      }
+      device [
+        RotationalMotor {
+          name "motor2"
+          maxVelocity 50
+          maxTorque 20
+        }
+      ]
+      endPoint DEF WHEEL2 Solid {
+        translation -0.072 -3.41413e-05 0.07
+        rotation -0.7070918984346695 0.7070946009458952 0.006186475670366671 3.1292197670514277
+        children [
+          USE WHEEL
+        ]
+        name "solid(3)"
+        boundingObject USE WHEEL
+        physics DEF WHEEL_PH Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 128.55888746682956
+        anchor 0.072 -3.41413e-05 -0.07
+      }
+      device [
+        RotationalMotor {
+          name "motor3"
+          maxVelocity 50
+          maxTorque 20
+        }
+      ]
+      endPoint DEF WHEEL3 Solid {
+        translation 0.072 -3.41413e-05 -0.07
+        rotation -0.7041664973033164 0.7041691346676622 -0.09107894299438535 3.323248433874387
+        children [
+          USE WHEEL
+        ]
+        name "solid(2)"
+        boundingObject USE WHEEL
+        physics DEF WHEEL_PH Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 116.26723694373537
+        anchor -0.072 -3.41413e-05 -0.07
+      }
+      device [
+        RotationalMotor {
+          name "motor4"
+          maxVelocity 50
+          maxTorque 20
+        }
+      ]
+      endPoint DEF WHEEL4 Solid {
+        translation -0.072 -3.41413e-05 -0.07
+        rotation -0.7070919571460944 0.7070946483271564 0.006174337729732703 3.129243997883069
+        children [
+          USE WHEEL
+        ]
+        name "solid(1)"
+        boundingObject USE WHEEL
+        physics DEF WHEEL_PH Physics {
+        }
+      }
+    }
+  ]
+  name "truck3"
+  boundingObject USE BODY
+  physics Physics {
+    density -1
+    mass 1
+  }
+  controller "follow_line3"
+}
+DEF Robot4 Robot {
+  translation -43 0.0499392 10.2
+  rotation 6.544299998632453e-06 0.9999999997910323 1.9367699995952776e-05 -3.14
+  children [
+    DEF BODY Shape {
+      appearance PBRAppearance {
+        metalness 0
+      }
+      geometry Box {
+        size 0.12 0.008 0.24
+      }
+    }
+    DEF CABIN Solid {
+      translation 0 0.048 0.088
+      children [
+        DEF CABIN Shape {
+          appearance PBRAppearance {
+            baseColor 0.333333 1 0.333333
+            metalness 0
+          }
+          geometry Box {
+            size 0.12 0.08 0.064
+          }
+        }
+      ]
+      name "solid(4)"
+      boundingObject USE CABIN
+      physics Physics {
+      }
+    }
+    DEF TRUNK Solid {
+      translation 0 0.056 -0.032
+      children [
+        DEF TRUNK Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.12 0.096 0.176
+          }
+        }
+      ]
+      name "solid(5)"
+      boundingObject USE TRUNK
+      physics Physics {
+      }
+    }
+    Camera {
+      translation 0 0.0125882 0.12
+      rotation 5.1289091992824446e-08 -0.9659258492011157 -0.2588189595935751 -3.1415853071795863
+      children [
+        DEF c1 Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.002 0.002 0.002
+          }
+        }
+      ]
+      boundingObject USE c1
+      physics Physics {
+      }
+      width 16
+      height 16
+    }
+    DistanceSensor {
+      translation 0.04 0 0.12
+      rotation 0 1 0 -1.5707953071795862
+      children [
+        DEF ds Shape {
+          appearance PBRAppearance {
+            baseColor 0 0 0
+          }
+          geometry Box {
+            size 0.002 0.002 0.002
+          }
+        }
+      ]
+      name "ds_left"
+      boundingObject USE ds
+      physics Physics {
+      }
+      lookupTable [
+        0 0 0
+        1 1000 0
+      ]
+    }
+    DistanceSensor {
+      translation -0.04 0 0.12
+      rotation 0 -1 0 1.5708
+      children [
+        USE ds
+      ]
+      name "ds_right"
+      boundingObject USE ds
+      physics Physics {
+      }
+      lookupTable [
+        0 0 0
+        1 1000 0
+      ]
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 128.55882482663796
+        anchor 0.072 -3.41413e-05 0.07
+      }
+      device [
+        RotationalMotor {
+          name "motor1"
+          maxVelocity 50
+          maxTorque 20
+        }
+      ]
+      endPoint DEF WHEEL1 Solid {
+        translation 0.072 -3.41413e-05 0.07
+        rotation -0.7041650501682469 0.7041677060843536 -0.09110117358985874 3.3232925615822984
+        children [
+          DEF WHEEL Shape {
+            appearance PBRAppearance {
+              baseColor 0.321569 0.321569 0.321569
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.02
+              radius 0.04
+            }
+          }
+        ]
+        boundingObject USE WHEEL
+        physics DEF WHEEL_PH Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 116.2672712442698
+        anchor -0.072 -3.41413e-05 0.07
+      }
+      device [
+        RotationalMotor {
+          name "motor2"
+          maxVelocity 50
+          maxTorque 20
+        }
+      ]
+      endPoint DEF WHEEL2 Solid {
+        translation -0.072 -3.41413e-05 0.07
+        rotation -0.7070918984346691 0.7070946009458956 0.006186475670366782 3.1292197670514272
+        children [
+          USE WHEEL
+        ]
+        name "solid(3)"
+        boundingObject USE WHEEL
+        physics DEF WHEEL_PH Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 128.55888746682956
+        anchor 0.072 -3.41413e-05 -0.07
+      }
+      device [
+        RotationalMotor {
+          name "motor3"
+          maxVelocity 50
+          maxTorque 20
+        }
+      ]
+      endPoint DEF WHEEL3 Solid {
+        translation 0.072 -3.41413e-05 -0.07
+        rotation -0.7041664973033156 0.704169134667663 -0.09107894299438553 3.323248433874386
+        children [
+          USE WHEEL
+        ]
+        name "solid(2)"
+        boundingObject USE WHEEL
+        physics DEF WHEEL_PH Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 116.26723694373537
+        anchor -0.072 -3.41413e-05 -0.07
+      }
+      device [
+        RotationalMotor {
+          name "motor4"
+          maxVelocity 50
+          maxTorque 20
+        }
+      ]
+      endPoint DEF WHEEL4 Solid {
+        translation -0.072 -3.41413e-05 -0.07
+        rotation -0.7070919571460944 0.7070946483271564 0.006174337729732738 3.129243997883069
+        children [
+          USE WHEEL
+        ]
+        name "solid(1)"
+        boundingObject USE WHEEL
+        physics DEF WHEEL_PH Physics {
+        }
+      }
+    }
+  ]
+  name "truck4"
+  boundingObject USE BODY
+  physics Physics {
+    density -1
+    mass 1
+  }
+  controller "follow_line4"
+}
+DEF Robot5 Robot {
+  translation -43 0.0499392 11.2
+  rotation 6.544299998632453e-06 0.9999999997910323 1.9367699995952776e-05 -3.14
+  children [
+    DEF BODY Shape {
+      appearance PBRAppearance {
+        metalness 0
+      }
+      geometry Box {
+        size 0.12 0.008 0.24
+      }
+    }
+    DEF CABIN Solid {
+      translation 0 0.048 0.088
+      children [
+        DEF CABIN Shape {
+          appearance PBRAppearance {
+            baseColor 0.33333 0.33333 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.12 0.08 0.064
+          }
+        }
+      ]
+      name "solid(4)"
+      boundingObject USE CABIN
+      physics Physics {
+      }
+    }
+    DEF TRUNK Solid {
+      translation 0 0.056 -0.032
+      children [
+        DEF TRUNK Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.12 0.096 0.176
+          }
+        }
+      ]
+      name "solid(5)"
+      boundingObject USE TRUNK
+      physics Physics {
+      }
+    }
+    Camera {
+      translation 0 0.0125882 0.12
+      rotation 5.1289091992824446e-08 -0.9659258492011157 -0.2588189595935751 -3.1415853071795863
+      children [
+        DEF c1 Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.002 0.002 0.002
+          }
+        }
+      ]
+      boundingObject USE c1
+      physics Physics {
+      }
+      width 16
+      height 16
+    }
+    DistanceSensor {
+      translation 0.04 0 0.12
+      rotation 0 1 0 -1.5707953071795862
+      children [
+        DEF ds Shape {
+          appearance PBRAppearance {
+            baseColor 0 0 0
+          }
+          geometry Box {
+            size 0.002 0.002 0.002
+          }
+        }
+      ]
+      name "ds_left"
+      boundingObject USE ds
+      physics Physics {
+      }
+      lookupTable [
+        0 0 0
+        1 1000 0
+      ]
+    }
+    DistanceSensor {
+      translation -0.04 0 0.12
+      rotation 0 -1 0 1.5708
+      children [
+        USE ds
+      ]
+      name "ds_right"
+      boundingObject USE ds
+      physics Physics {
+      }
+      lookupTable [
+        0 0 0
+        1 1000 0
+      ]
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 128.55882482663796
+        anchor 0.072 -3.41413e-05 0.07
+      }
+      device [
+        RotationalMotor {
+          name "motor1"
+          maxVelocity 50
+          maxTorque 20
+        }
+      ]
+      endPoint DEF WHEEL1 Solid {
+        translation 0.072 -3.41413e-05 0.07
+        rotation -0.7041650501682469 0.7041677060843536 -0.09110117358985874 3.3232925615822975
+        children [
+          DEF WHEEL Shape {
+            appearance PBRAppearance {
+              baseColor 0.321569 0.321569 0.321569
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.02
+              radius 0.04
+            }
+          }
+        ]
+        boundingObject USE WHEEL
+        physics DEF WHEEL_PH Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 116.2672712442698
+        anchor -0.072 -3.41413e-05 0.07
+      }
+      device [
+        RotationalMotor {
+          name "motor2"
+          maxVelocity 50
+          maxTorque 20
+        }
+      ]
+      endPoint DEF WHEEL2 Solid {
+        translation -0.072 -3.41413e-05 0.07
+        rotation -0.7070918984346691 0.7070946009458956 0.006186475670366585 3.1292197670514272
+        children [
+          USE WHEEL
+        ]
+        name "solid(3)"
+        boundingObject USE WHEEL
+        physics DEF WHEEL_PH Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 128.55888746682956
+        anchor 0.072 -3.41413e-05 -0.07
+      }
+      device [
+        RotationalMotor {
+          name "motor3"
+          maxVelocity 50
+          maxTorque 20
+        }
+      ]
+      endPoint DEF WHEEL3 Solid {
+        translation 0.072 -3.41413e-05 -0.07
+        rotation -0.7041664973033155 0.704169134667663 -0.0910789429943854 3.323248433874387
+        children [
+          USE WHEEL
+        ]
+        name "solid(2)"
+        boundingObject USE WHEEL
+        physics DEF WHEEL_PH Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 116.26723694373537
+        anchor -0.072 -3.41413e-05 -0.07
+      }
+      device [
+        RotationalMotor {
+          name "motor4"
+          maxVelocity 50
+          maxTorque 20
+        }
+      ]
+      endPoint DEF WHEEL4 Solid {
+        translation -0.072 -3.41413e-05 -0.07
+        rotation -0.7070919571460937 0.7070946483271571 0.006174337729732703 3.129243997883068
+        children [
+          USE WHEEL
+        ]
+        name "solid(1)"
+        boundingObject USE WHEEL
+        physics DEF WHEEL_PH Physics {
+        }
+      }
+    }
+  ]
+  name "truck5"
+  boundingObject USE BODY
+  physics Physics {
+    density -1
+    mass 1
+  }
+  controller "follow_line5"
+}

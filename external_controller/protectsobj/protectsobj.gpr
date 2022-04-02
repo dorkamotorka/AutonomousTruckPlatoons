@@ -1,0 +1,5 @@
+project Protectsobj is
+    for Source_Dirs use ("src");
+    for Object_Dir use "obj";
+    for Main use ("protectsobj.adb");
+end Protectsobj;

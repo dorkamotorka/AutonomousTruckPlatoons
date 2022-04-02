@@ -1,0 +1,234 @@
+PROTO Truck [
+     field SFVec3f    translation  0 0 0
+     field SFRotation rotation     0 1 0 0
+     field SFFloat    bodyMass     1   
+  ]
+  {
+    Robot {
+      translation -42.9994 0.0504221 6.49484
+      rotation 5.925159999215534e-08 0.9999999998676044 1.627229999784562e-05 -3.1284353071795863
+      children [
+        DEF TRUNK Solid {
+          translation 0 0.07 -0.04
+          children [
+            Shape {
+              appearance PBRAppearance {
+                roughness 1
+                metalness 0
+              }
+             geometry Box {
+               size 0.15 0.12 0.22
+             }
+           }
+         ]
+         name "solid(5)"
+       }
+      DEF CABIN Solid {
+        translation 0 0.06 0.11
+        children [
+          DEF CABIN Shape {
+            appearance PBRAppearance {
+              baseColor 1 1 0
+              roughness 1
+              metalness 0
+            }
+            geometry Box {
+              size 0.15 0.1 0.08
+            }
+          }
+        ]
+        name "solid(4)"
+      }
+      Camera {
+        translation 6.38592e-08 0.03 0.15
+        rotation -1.5969701856265948e-06 -0.9238801073888041 -0.3826820444817101 -3.1415853071795863
+        scale 0.2 0.2 0.2
+        children [
+          DEF c1 Shape {
+            appearance PBRAppearance {
+              baseColor 1 0 0
+              metalness 0
+            }
+            geometry Box {
+              size 0.01 0.01 0.01
+            }
+          }
+        ]
+        boundingObject USE c1
+        physics Physics {
+          density 2000
+        }
+      }
+      DistanceSensor {
+        translation -0.05 0 0.15
+        rotation 0 -1 0 1.5708996938995747
+        scale 0.2 0.2 0.2
+        children [
+          DEF ds_r Shape {
+            appearance PBRAppearance {
+              baseColor 0 0 0
+            }
+            geometry Box {
+              size 0.01 0.01 0.01
+            }
+          }
+        ]
+        name "ds_right"
+        boundingObject USE ds_r
+        physics Physics {
+          density 2000
+        }
+        lookupTable [
+          0 0 0
+          1 500 0
+          1.1 500 0
+        ]
+      }
+      DistanceSensor {
+        translation 0.05 0 0.15
+        rotation 0 1 0 -1.5691003061004252
+        scale 0.2 0.2 0.2
+        children [
+          DEF ds_r Shape {
+            appearance PBRAppearance {
+              baseColor 0 0 0
+            }
+            geometry Box {
+              size 0.01 0.01 0.01
+            }
+          }
+        ]
+        name "ds_left"
+        boundingObject USE ds_r
+        physics Physics {
+          density 2000
+        }
+        lookupTable [
+          0 0 0
+          1 500 0
+          1.1 500 0
+        ]
+      }
+      DEF WHEEL1 HingeJoint {
+        jointParameters HingeJointParameters {
+          position 1203.19
+          anchor 0.09 0 0.11
+        }
+        device [
+          RotationalMotor {
+            name "motor1"
+            maxVelocity 30
+            maxTorque 20
+          }
+        ]
+        endPoint DEF WHEEL1 Solid {
+          translation 0.095 0 0.11
+          rotation 0.7069912298327287 -0.7069939064852289 0.017972677384339133 3.1056514983714423
+          children [
+            DEF WHEEL Shape {
+              appearance PBRAppearance {
+                baseColor 0.215686 0.215686 0.215686
+                roughness 1
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.02
+                radius 0.03
+              }
+            }
+          ]
+          boundingObject USE WHEEL
+          physics DEF WHEEL_PH Physics {
+          }
+        }
+      } 
+      DEF WHEEL2 HingeJoint {
+        jointParameters HingeJointParameters {
+          position 1451.6467303154348
+          anchor -0.09 0 0.11
+        }
+        device [
+          RotationalMotor {
+            name "motor2"
+            maxVelocity 30
+            maxTorque 20
+          }
+        ]
+        endPoint DEF WHEEL2 Solid {
+          translation -0.095 2.4537e-07 0.11
+          rotation -0.41548224780568 0.41548229702245143 0.8091655965371284 1.780982904586911
+          children [
+            USE WHEEL
+          ]
+          name "solid(3)"
+          boundingObject USE WHEEL
+          physics DEF WHEEL_PH Physics {
+          }
+        }
+      }
+      DEF WHEEL3 HingeJoint {
+        jointParameters HingeJointParameters {
+          position 1202.7298029583533
+          anchor 0.09 0 -0.11
+        }
+        device [
+          RotationalMotor {
+            name "motor3"
+            maxVelocity 30
+            maxTorque 20
+          }
+        ]
+        endPoint DEF WHEEL3 Solid {
+          translation 0.095 2.45153e-07 -0.11
+          rotation -0.6144135457401604 0.6144157795050811 -0.4949638822239127 -2.2223746007421266
+          children [
+            USE WHEEL
+          ]
+          name "solid(2)"
+          boundingObject USE WHEEL
+          physics DEF WHEEL_PH Physics {
+          }
+        }
+      }
+      DEF WHEEL4 HingeJoint {
+        jointParameters HingeJointParameters {
+          position 1449.3585793853588
+          anchor -0.09 0 -0.11
+        }
+        device [
+          RotationalMotor {
+            name "motor4"
+            maxVelocity 30
+            maxTorque 20
+          }
+        ]
+        endPoint DEF WHEEL4 Solid {
+          translation -0.095 2.45338e-07 -0.11
+          rotation -0.7070160556680142 0.7070187483314994 0.015899262102482783 3.1097967444894685
+          children [
+            USE WHEEL
+          ]
+          name "solid(1)"
+          boundingObject USE WHEEL
+          physics DEF WHEEL_PH Physics {
+          }
+        }
+      }
+      DEF BODY Shape {
+        appearance PBRAppearance {
+          metalness 0
+        }
+        geometry Box {
+          size 0.15 0.01 0.3
+        }
+      }
+    ]
+    name "truck"
+    boundingObject USE BODY
+    physics Physics {
+      density -1
+      mass 1
+    }
+    controller "follow_line"
+   }
+  }

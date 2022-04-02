@@ -1,0 +1,170 @@
+ 
+Which functions and concepts were contributed to the project?
+What has been done to fulfill the management role (quality manager, etc.)?
+
+
+Teodor Janez Podobnik
++ GitLab Repository Maintainter (Structure of the project, cleaning and prepare repository, Documentation Backend & Frontend)
++ Code Formatting (Ada, C, Python)
++ CI/CD Pipeline(Created and Maintained) + Code Coverage
++ Custom Docker image
++ Self-hosted runner (Raspberry Pi Cluster)
++ Unit/Integration Tests for Backend
++ SPARK
++ Development Cycle (Branch Naming, Pull Request etc.)
++ Pair Programming with Teammates
++ Full Backend Development
++ Integration of Frontend and External Controller to Backend
++ Defined protocols for communication between Backend and Frontend and External Controller (Platooning Protocol was done by Ayusch)
++ Integration of the Nodes Graph to Backend and Frontend Software
++ Scripts to run and compile system
++ At the beginning also created a 6-wheel truck that later was not used
+
++ As a Technical Manager I contributed as:
+- Set up the infrastructure of the project 
+- Pair Programming session to introduce members to correct usage of infrastructure	 
+- Provided Development cycle instructions and made sure we follow them
+- Monitor master branch(PR, reverting commits, branch-naming)
+- Setup CI/CD and maintain it
++As a Integration Manager
+- Defined protocol between Backend and Frontend
+- Defined protocol between External Controllers and Backend (not Platooning protocol)
+- Extension of interfaces and protocols in response to new requirements (Adjust) 
+		+As a Quality Manager
+Defined but not implemented safety requirements to the code level
+SPARK Testing (Pair Programming session)
+Code Reviews and cleaning Merge conflicts	 
+
+
+
+
+
+René Kriegel
++ second Milestone presentation
++ assist other Teammates
+
++ external controller
+create TCP Server for Webots communication, Ayusch did the message processing
+create TCP Client for Backend communication, Ayusch did the message processing
+create all parts of the position_algorithm package
+SPARK testing in position_algorithm and follow_path
+Pair Programming with Teammates
+
++ Webots controller
+assist to implement the TCP client
+assist by message processing
+
++ environment
+integration testing of the external controller
+integration testing of the position algorithm
+create Node Graph of the environment, Yuke measured the distances for the graph
+
++ Quality Manager
+define Issue description
+Spark testing with Teo and Lubna
+Integrate external controller with backend
+Integrate external controller with webots controller
+Integrate external controller with environment
+system testing
+integration testing
+code reviews
+bug fixing
+
+
+
+Lubna Yaqoob
++ At the beginning until first milestone i created a complete webots environment, which   later was not considered as final version.
+	+ Full frontend development
+	+ Defined protocol for communication between frontend and backend 
+	+ Defined TCP/IP communication protocol datasets used for webots to 
+external controller backend and frontend, 
+	+ Testing with SPARK
+	+ Full documentation of the project
+	+ Pair Programming with Teammates
+
+			As a integration manager
+		+ developed communicate through a service call for BE , FE, 
+where backend gives feedback on a successful call.
+				+ Defined protocol datasets for Backend and External controller
+			As a quality manager 
+				+SPARK testing (Pair programming session)
+				+system testing
+				+Integration testting
+				+Code reviews
+
+
+Yuke Qian
+- Environment:
++ Create the Environment in Webots.
++ Create the Robot proto in Webots.
++ the ideal of using different colors to enter and exit different pickup/drop off location.
++ participate integration testing of the external controller/position algorithm.
++ assist Rene in node graph of our environment for the position algorithm (Rene write position algorithm).
+- Webots:
++ unit testing webots controller follow_line with Cheng.
+- External controller:
++ Platooning testing and optimization the PID gain (Lu wrote the PID controller for Platoon).
++ fuel consumption function in platoon.
++ safety performance of platoon.
+- Documentation
++ README.md file for environment, webots and External controller.
+As a Technical Manager:
++ setup Slack group.
++ setup Gitlab project group.
++ try my best to solve the technical problem my teammate meet.
++ participate in integration testing. 
+
+Ayusch Khajuria:
+
+- moderating the external_controlller sub-meeting once a week 
+
+- External Controller:
+    Integrating follow_path and webots_server and writing a the Message Handle for proper communication with webots
+    Helping debug Follow_Path
+    Creating & Implementing a Degradation Cascade for Platooning
+    Creating concept and Protocols for Platooning
+    Idea and Implementation of whole ProtectsObj package
+    Implementing the whole Platooning Communication (package Controller_Peer) (expect the Formula/Concept of Platoon cost (done by Yuke))
+    Message processing in backend_client (evaluateMessageBackendMain) + writing reply (task WritePosition)  (together with Rene)
+    writing Documentation of Controller_Peer and Message_Handle
+    webots Controller
+    assist to implement the TCP client
+    integration of webots_controller and external_controller
+    
+- Environment:
+    Integration of the webots Controller
+    Debugging environment 
+
+- Backend:
+    Integration of external controller with backend
+
+- Time Manager:
+    Creating Work packages on GitLab and taking over Assignment
+    Idea of Issue (=Work Package) Description
+    Creating Schedule of Issues and Project Plan and verify compliance
+    Keeping uptodate with Members progress and plan reassignment
+    Organizing Dates for Meeting
+    Defining Project Requirements
+    Splitting up Content according to Milestones 
+
+
+Cheng Peng
+	environment
++ the ideal of using different colors to enter and exit different pickup/drop off locations.
++ participate in integration testing of the external controller/position algorithm.
++ At the beginning until the third milestone I helped Yuke to create a complete webots environment, which later was considered as the final version.
++Integration of the webots Controller
++Debugging environment 
+	+external controller
+		+writing Documentation of follow path
+		+ Full follow path code written.
+		+ Pair Programming with Teammates
+
+	As a integration manager
++ developed communication where the backend gives feedback on a successful call.
+		+ Defined protocol datasets for Backend and External controller
++Integrate external controller with webots controller
++Integrate external controller with environment
+		+system testing
+		+Integration testting
+		+Code reviews

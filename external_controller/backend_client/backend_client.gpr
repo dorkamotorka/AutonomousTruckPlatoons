@@ -1,0 +1,10 @@
+with "../message_handle/message_handle.gpr";
+with "../protectsobj/protectsobj.gpr";
+with "../controller_peer/controller_peer.gpr";
+with "../position_algorithm/position_algorithm.gpr";
+
+project Backend_Client is
+    for Source_Dirs use ("src");
+    for Object_Dir use "obj";
+    for Main use ("backend_client.adb");
+end Backend_Client;

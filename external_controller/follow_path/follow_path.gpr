@@ -1,0 +1,8 @@
+with "../protectsobj/protectsobj.gpr";
+with "../controller_peer/controller_peer.gpr";
+
+project Follow_Path is
+    for Source_Dirs use ("src");
+    for Object_Dir use "obj";
+    for Main use ("follow_path.adb");
+end Follow_Path;
