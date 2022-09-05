@@ -1,5 +1,0 @@
- Platooning:
-    - Currently just the Platooning Communication is set up yet a controller is missing who can regulate the Distance between Trucks
-    - Calculation of Platooning is not flexible enough, currently its possible to tell the Trucks with the same PickUp/DropOff to Platoon. Potential for more is there
- Enviroment:
-    - Sometimes the Trucks go crazy. This is rather random than based on code. Just try again the next time it will work.
